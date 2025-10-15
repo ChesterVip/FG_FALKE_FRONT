@@ -2,6 +2,7 @@
   "name": "fg-falke-website",
   "version": "1.0.0",
   "description": "Strona internetowa FG Falke - firma transportowo-logistyczna",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
