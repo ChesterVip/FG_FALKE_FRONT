@@ -10,7 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Hidden Netlify form for detection -->
+  </head>
+  <body>
+    <div id="root"></div>
+    
+    <!-- Ukryty wzorzec dla Netlify Forms -->
     <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
       <input type="hidden" name="form-name" value="contact" />
       <input type="text" name="name" />
@@ -26,10 +30,9 @@
         <option value="inne">Inne</option>
       </select>
       <textarea name="message"></textarea>
+      <input type="text" name="bot-field" /> <!-- honeypot -->
     </form>
-  </head>
-  <body>
-    <div id="root"></div>
+    
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
